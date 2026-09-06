@@ -4,71 +4,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ravi Teja Gadde</title>
-  <meta name="description" content="Ravi Teja Gadde — software engineer working on the foundations of AI products: retrieval, agents, evaluation, and the production systems around them.">
+  <meta name="description" content="Ravi Teja Gadde — Senior Software Engineer. AI systems and products. Ten years building products end to end across analytics platforms, payments, and financial services.">
   <style>
     :root {
       color-scheme: light dark;
-      --bg: #fbfaf8; --fg: #1d1d1b; --muted: #5d5b56; --line: #e6e2da; --link: #0b5fa4;
-      --maxw: 40rem;
+      --bg: #fbfaf8; --fg: #1c1c1a; --muted: #625f59; --line: #e5e1d9; --accent: #0b5fa4; --chip: #eef3f8; --card: #ffffff;
     }
     @media (prefers-color-scheme: dark) {
-      :root { --bg: #14151a; --fg: #ebe9e4; --muted: #a09d96; --line: #2b2d35; --link: #7fb4ea; }
+      :root { --bg: #14151a; --fg: #ebe9e4; --muted: #a29f98; --line: #2b2d35; --accent: #7fb4ea; --chip: #1e2230; --card: #191b21; }
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0; background: var(--bg); color: var(--fg);
-      font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    main { max-width: var(--maxw); margin: 0 auto; padding: 4rem 1.25rem 5rem; }
-    header { margin-bottom: 2.5rem; }
-    h1 { font-size: 1.9rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
-    .tag { color: var(--muted); margin: 0; }
-    h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 2.5rem 0 .75rem; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    main { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.25rem 4rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero h1 { font-size: 2.2rem; margin: 0 0 .3rem; letter-spacing: -.015em; }
+    .hero .role { font-size: 1.15rem; margin: 0 0 .9rem; }
+    .hero .arc { color: var(--muted); margin: 0 0 1.1rem; max-width: 40rem; }
+    .links a { display: inline-block; background: var(--chip); border: 1px solid var(--line); border-radius: 999px; padding: .25rem .8rem; margin: 0 .4rem .4rem 0; font-size: .92rem; }
+    .links a:hover { text-decoration: none; border-color: var(--accent); }
+
+    h2 { font-size: 1.25rem; margin: 2.6rem 0 .8rem; padding-bottom: .35rem; border-bottom: 1px solid var(--line); }
     p { margin: 0 0 1rem; }
-    a { color: var(--link); text-decoration: none; border-bottom: 1px solid transparent; }
-    a:hover { border-bottom-color: currentColor; }
-    ul { padding-left: 1.1rem; margin: 0 0 1rem; }
-    li { margin-bottom: .6rem; }
-    li strong { font-weight: 600; }
-    footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
-    footer a { margin-right: 1.25rem; }
+
+    .timeline { display: grid; grid-template-columns: 8.5rem 1fr; row-gap: 1rem; column-gap: 1rem; }
+    .timeline .when { color: var(--muted); font-size: .92rem; padding-top: .15rem; }
+    .timeline .what strong { display: block; font-weight: 650; }
+    .timeline .what span { color: var(--muted); font-size: .97rem; }
+
+    .focus { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .75rem; margin-top: .5rem; }
+    .focus div { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: .8rem .95rem; font-size: .95rem; }
+    .focus div b { display: block; margin-bottom: .2rem; }
+
+    .repos { display: grid; gap: .75rem; }
+    .repos a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; color: inherit; }
+    .repos a:hover { text-decoration: none; border-color: var(--accent); }
+    .repos b { color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 600; }
+    .repos span { display: block; color: var(--muted); font-size: .95rem; margin-top: .2rem; }
+
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+    @media (max-width: 600px) { .timeline { grid-template-columns: 1fr; row-gap: .3rem; } .timeline .when { padding-top: .6rem; } }
   </style>
 </head>
 <body>
 <main>
-  <header>
+  <section class="hero">
     <h1>Ravi Teja Gadde</h1>
-    <p class="tag">Software engineer. Foundations for AI products. Phoenix, Arizona.</p>
-  </header>
+    <p class="role">Senior Software Engineer · AI systems and products</p>
+    <p class="arc">Ten years building products end to end, across analytics platforms, payment systems, and financial services. Now building the AI systems behind Gallup's enterprise products.</p>
+    <div class="links">
+      <a href="https://github.com/raviteja-gadde">GitHub</a>
+      <a href="https://www.linkedin.com/in/raviteja-gadde/">LinkedIn</a>
+      <a href="https://x.com/ravi_gadde7">X</a>
+    </div>
+  </section>
 
-  <h2>What I do</h2>
-  <p>
-    I'm a Senior Software Engineer on the Gallup AI team, working on the shared foundation the Gallup AI products are built on: retrieval, agents, evaluation, and the production systems around them on AWS, from RFC to running in production.
-  </p>
-  <p>
-    One of those systems is described in an AWS Architecture Blog post I co-authored:
-    <a href="https://aws.amazon.com/blogs/architecture/gallup-delivers-real-time-workplace-coaching-to-thousands-of-leaders-with-amazon-bedrock/">Gallup delivers real-time workplace coaching to thousands of leaders with Amazon Bedrock</a>.
-  </p>
+  <h2>About</h2>
+  <p>I design and build products end to end, from system architecture through full stack development and infrastructure. I'm most drawn to solving hard design problems and building practical solutions from the ground up, with trade-off decisions that hold up over time.</p>
+  <p>Right now that means the systems that make Gallup's science accessible to clients across products and platforms: agentic capabilities, MCP services, and the knowledge and data systems behind them, owned from RFC to production across system design, infrastructure, observability, and security. One of those systems is described in an AWS Architecture Blog post I co-authored: <a href="https://aws.amazon.com/blogs/architecture/gallup-delivers-real-time-workplace-coaching-to-thousands-of-leaders-with-amazon-bedrock/">Gallup delivers real-time workplace coaching to thousands of leaders with Amazon Bedrock</a>.</p>
 
-  <h2>How I work</h2>
-  <p>
-    I learn by building. When I need to understand something properly, I work through it with runnable code, write it up, and check the claims against primary sources. Most of what I publish is that habit made visible.
-  </p>
-  <p>
-    The layers I keep coming back to are the ones an AI product actually stands on: the data underneath it, the identity and access around it, the retrieval that feeds it, and the evaluation that tells you whether any of it works.
-  </p>
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="when">2023 – now</div>
+    <div class="what"><strong>Gallup · Senior Software Engineer, AI</strong><span>Gallup AI from early prototypes to production-scale streaming, retrieval, and knowledge systems; agentic capabilities and MCP services; service-layer migration from EC2 to containers on AWS.</span></div>
+    <div class="when">2019 – 2023</div>
+    <div class="what"><strong>Gallup · Senior Software Developer</strong><span>Full stack on Gallup Access, the analytics and reporting platform behind CliftonStrengths and Q12: reporting frontends, Android, data processing services.</span></div>
+    <div class="when">2017 – 2019</div>
+    <div class="what"><strong>CDS Global · Software Developer</strong><span>Payment processing for ecommerce clients: tokenized checkout, real-time processing APIs, batch systems, load and performance testing.</span></div>
+    <div class="when">2016 – 2017</div>
+    <div class="what"><strong>Wells Fargo · Software Developer</strong><span>Mortgage processing platform covering the loan lifecycle, in a regulated financial services environment.</span></div>
+    <div class="when">2014 – 2015</div>
+    <div class="what"><strong>UT Arlington · M.S. Computer Science</strong><span>Data systems, distributed computing, cloud applications.</span></div>
+  </div>
 
-  <h2>In public</h2>
-  <ul>
-    <li><a href="https://github.com/raviteja-gadde/data-engineering-labs"><strong>data-engineering-labs</strong></a> — data engineering by building: warehousing, columnar storage, dbt and Airflow, precomputation, suppression and access control. Notes with runnable labs.</li>
-    <li><a href="https://github.com/raviteja-gadde/auth0-playbook"><strong>auth0-playbook</strong></a> — production authentication on Auth0: notes and runnable flows for OAuth/OIDC, enterprise federation, fine-grained authorization, and MCP server auth.</li>
-  </ul>
+  <h2>Focus</h2>
+  <p>The layers an AI product actually stands on, and where I go deepest:</p>
+  <div class="focus">
+    <div><b>Agent systems</b>Orchestration, tool use, governance for autonomous workflows.</div>
+    <div><b>Evaluation</b>Knowing whether any of it works, before and after it ships.</div>
+    <div><b>Retrieval</b>Beyond managed services: indexing, hybrid search, reranking.</div>
+    <div><b>Data foundations</b>Warehousing, pipelines, and access control under AI systems.</div>
+  </div>
 
-  <footer>
-    <a href="https://github.com/raviteja-gadde">GitHub</a>
-    <a href="https://x.com/ravi_gadde7">X</a>
-  </footer>
+  <h2>Deep dives</h2>
+  <div class="repos">
+    <a href="https://github.com/raviteja-gadde/data-engineering-labs"><b>data-engineering-labs</b><span>Data engineering by building: warehousing, columnar storage, dbt and Airflow, precomputation, suppression and access control. Notes with runnable labs.</span></a>
+    <a href="https://github.com/raviteja-gadde/auth0-playbook"><b>auth0-playbook</b><span>Production authentication on Auth0: notes and runnable flows for OAuth/OIDC, enterprise federation, fine-grained authorization, and MCP server auth.</span></a>
+  </div>
+
+  <footer>Phoenix, Arizona.</footer>
 </main>
 </body>
 </html>
