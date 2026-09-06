@@ -1,18 +1,74 @@
 <!doctype html>
-<title>Ravi Portfolio</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ravi Teja Gadde</title>
+  <meta name="description" content="Ravi Teja Gadde — software engineer working on the foundations of AI products: retrieval, agents, evaluation, and the production systems around them.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fbfaf8; --fg: #1d1d1b; --muted: #5d5b56; --line: #e6e2da; --link: #0b5fa4;
+      --maxw: 40rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #14151a; --fg: #ebe9e4; --muted: #a09d96; --line: #2b2d35; --link: #7fb4ea; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+    header { margin-bottom: 2.5rem; }
+    h1 { font-size: 1.9rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+    .tag { color: var(--muted); margin: 0; }
+    h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 2.5rem 0 .75rem; }
+    p { margin: 0 0 1rem; }
+    a { color: var(--link); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-bottom-color: currentColor; }
+    ul { padding-left: 1.1rem; margin: 0 0 1rem; }
+    li { margin-bottom: .6rem; }
+    li strong { font-weight: 600; }
+    footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+    footer a { margin-right: 1.25rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Ravi Teja Gadde</h1>
+    <p class="tag">Software engineer. Foundations for AI products. Phoenix, Arizona.</p>
+  </header>
 
-<article>
-    <h1>I&rsquo;ll be up running soon!</h1>
-    <div>
-        <p>Work in progress.....</p>
-        <p>&mdash; Ravi</p>
-    </div>
-</article>
+  <h2>What I do</h2>
+  <p>
+    I'm a Senior Software Engineer on the Gallup AI team, working on the shared foundation the Gallup AI products are built on: retrieval, agents, evaluation, and the production systems around them on AWS, from RFC to running in production.
+  </p>
+  <p>
+    One of those systems is described in an AWS Architecture Blog post I co-authored:
+    <a href="https://aws.amazon.com/blogs/architecture/gallup-delivers-real-time-workplace-coaching-to-thousands-of-leaders-with-amazon-bedrock/">Gallup delivers real-time workplace coaching to thousands of leaders with Amazon Bedrock</a>.
+  </p>
+
+  <h2>How I work</h2>
+  <p>
+    I learn by building. When I need to understand something properly, I work through it with runnable code, write it up, and check the claims against primary sources. Most of what I publish is that habit made visible.
+  </p>
+  <p>
+    The layers I keep coming back to are the ones an AI product actually stands on: the data underneath it, the identity and access around it, the retrieval that feeds it, and the evaluation that tells you whether any of it works.
+  </p>
+
+  <h2>In public</h2>
+  <ul>
+    <li><a href="https://github.com/raviteja-gadde/data-engineering-labs"><strong>data-engineering-labs</strong></a> — data engineering by building: warehousing, columnar storage, dbt and Airflow, precomputation, suppression and access control. Notes with runnable labs.</li>
+    <li><a href="https://github.com/raviteja-gadde/auth0-playbook"><strong>auth0-playbook</strong></a> — production authentication on Auth0: notes and runnable flows for OAuth/OIDC, enterprise federation, fine-grained authorization, and MCP server auth.</li>
+  </ul>
+
+  <footer>
+    <a href="https://github.com/raviteja-gadde">GitHub</a>
+    <a href="https://x.com/ravi_gadde7">X</a>
+  </footer>
+</main>
+</body>
+</html>
