@@ -4,60 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ravi Teja Gadde</title>
-  <meta name="description" content="Ravi Teja Gadde — Senior Software Engineer. AI systems and products, and the data, identity, retrieval, and evaluation they stand on.">
-  <meta property="og:title" content="Ravi Teja Gadde">
-  <meta property="og:description" content="Senior Software Engineer. AI systems and products.">
+  <meta name="description" content="Ravi Teja Gadde, software engineer. How I think about the systems underneath AI products, and where to find the rest.">
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #fbfaf8; --fg: #1c1c1a; --muted: #6b675f; --line: #e6e2da; --accent: #0b5fa4; --card: #ffffff;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #131417; --fg: #ebe9e4; --muted: #a09d96; --line: #2a2c33; --accent: #83b6ea; --card: #191b20; }
-    }
+    :root { color-scheme: light dark; --bg: #fbfaf8; --fg: #1c1c1a; --muted: #6b675f; --line: #e6e2da; --accent: #0b5fa4; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #131417; --fg: #ebe9e4; --muted: #a09d96; --line: #2a2c33; --accent: #83b6ea; } }
     * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-    main { max-width: 40rem; margin: 0 auto; padding: 5rem 1.25rem 4rem; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 18px/1.65 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    main { max-width: 38rem; margin: 0 auto; padding: 6rem 1.25rem 4rem; }
+    h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 .25rem; letter-spacing: -.02em; }
+    .role { margin: 0 0 2.2rem; color: var(--muted); }
+    p { margin: 0 0 1.1rem; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; text-underline-offset: .15em; }
-
-    h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .35rem; letter-spacing: -.02em; }
-    .role { margin: 0 0 2.2rem; color: var(--muted); font-size: 1.05rem; }
-    p { margin: 0 0 1.1rem; }
-
-    .proof { display: block; margin: 2rem 0 0; padding: 1rem 1.15rem; background: var(--card); border: 1px solid var(--line); border-radius: 12px; color: inherit; }
-    .proof:hover { text-decoration: none; border-color: var(--accent); }
-    .proof small { display: block; color: var(--muted); font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; margin-bottom: .3rem; }
-    .proof span { color: var(--accent); font-weight: 600; }
-
-    footer { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: 3.5rem; padding-top: 1.1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
-    footer .place { margin-left: auto; }
-    @media (max-width: 480px) { footer .place { margin-left: 0; flex-basis: 100%; } }
+    dl { margin: 2.4rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--line); display: grid; grid-template-columns: max-content 1fr; column-gap: 1.4rem; row-gap: .5rem; }
+    dt { font-weight: 600; }
+    dd { margin: 0; color: var(--muted); }
+    footer { margin-top: 3rem; color: var(--muted); font-size: .95rem; }
+    @media (max-width: 420px) { dl { grid-template-columns: 1fr; row-gap: .15rem; } dd { margin-bottom: .6rem; } }
   </style>
 </head>
 <body>
 <main>
   <h1>Ravi Teja Gadde</h1>
-  <p class="role">Senior Software Engineer · AI systems and products</p>
+  <p class="role">Software engineer</p>
 
-  <p>I'm a software engineer, ten years in, and I like to own the whole problem: design, code, the infrastructure it runs on, and what happens after it ships. Most of that time has been in analytics platforms, payments, and financial services, where mistakes cost money.</p>
+  <p>What I care about most is that things hold up. I'd rather understand a system down to the layer where it can fail than trust an abstraction I can't reason about. That's where I spend my time: the layers underneath an AI product, the data it stands on, the identity and access around it, the retrieval that feeds it, and the evaluation that says whether it works. The next stretch of my work is agent systems.</p>
 
-  <p>What I care about most is that things hold up. I'd rather understand a system down to the layer where it can fail than trust an abstraction I can't reason about. For an AI product that means the layers underneath it: the data it stands on, the identity and access around it, the retrieval that feeds it, and the evaluation that says whether it works.</p>
+  <dl>
+    <dt><a href="https://www.linkedin.com/in/raviteja-gadde/">LinkedIn</a></dt><dd>where I've worked and what I did there</dd>
+    <dt><a href="https://github.com/raviteja-gadde">GitHub</a></dt><dd>code</dd>
+    <dt><a href="https://x.com/ravi_gadde7">X</a></dt><dd>occasional notes</dd>
+  </dl>
 
-  <p>The next stretch of my work is agent systems: giving models tools, boundaries, and enough evaluation to trust them with real decisions. My day job is building exactly that at Gallup, where I took Gallup AI from first prototype to production.</p>
-
-  <a class="proof" href="https://aws.amazon.com/blogs/architecture/gallup-delivers-real-time-workplace-coaching-to-thousands-of-leaders-with-amazon-bedrock/">
-    <small>AWS Architecture Blog · co-author</small>
-    <span>Gallup delivers real-time workplace coaching to thousands of leaders with Amazon Bedrock</span>
-  </a>
-
-  <footer>
-    <a href="https://github.com/raviteja-gadde">GitHub</a>
-    <a href="https://www.linkedin.com/in/raviteja-gadde/">LinkedIn</a>
-    <a href="https://x.com/ravi_gadde7">X</a>
-    <span class="place">Greater Phoenix Area</span>
-  </footer>
+  <footer>Greater Phoenix Area</footer>
 </main>
 </body>
 </html>
