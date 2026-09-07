@@ -4,43 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ravi Teja Gadde</title>
-  <meta name="description" content="Ravi Teja Gadde, Senior Software Engineer. AI systems and products, and the layers they stand on.">
-  <style>
-    :root { color-scheme: light dark; --bg: #fbfaf8; --fg: #1c1c1a; --muted: #6b675f; --line: #e6e2da; --accent: #0b5fa4; }
-    @media (prefers-color-scheme: dark) { :root { --bg: #131417; --fg: #ebe9e4; --muted: #a09d96; --line: #2a2c33; --accent: #83b6ea; } }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--fg); font: 18px/1.65 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-    main { max-width: 38rem; margin: 0 auto; padding: 6rem 1.25rem 4rem; }
-    h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 .25rem; letter-spacing: -.02em; }
-    .role { margin: 0 0 2.2rem; color: var(--muted); }
-    p { margin: 0 0 1.1rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; text-underline-offset: .15em; }
-    dl { margin: 2.4rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--line); display: grid; grid-template-columns: max-content 1fr; column-gap: 1.4rem; row-gap: .5rem; }
-    dt { font-weight: 600; }
-    dd { margin: 0; color: var(--muted); }
-    footer { margin-top: 3rem; color: var(--muted); font-size: .95rem; }
-    @media (max-width: 420px) { dl { grid-template-columns: 1fr; row-gap: .15rem; } dd { margin-bottom: .6rem; } }
-  </style>
+  <meta name="description" content="Ravi Teja Gadde writes about building AI systems in production: agents, retrieval, and evaluation.">
+  <meta name="author" content="Ravi Teja Gadde">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Ravi Teja Gadde",
+    "description": "Writing about building AI systems in production: agents, retrieval, and evaluation.",
+    "url": "https://raviteja-gadde.github.io",
+    "author": {
+      "@type": "Person",
+      "name": "Ravi Teja Gadde",
+      "url": "https://raviteja-gadde.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/raviteja-gadde/",
+        "https://github.com/raviteja-gadde",
+        "https://x.com/ravi_gadde7"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
-<main>
-  <h1>Ravi Teja Gadde</h1>
-  <p class="role">Senior Software Engineer · AI systems and products</p>
+<div class="page">
+  <header class="site-header">
+    <h1>Ravi Teja Gadde</h1>
+    <p class="tagline">Senior Software Engineer · Greater Phoenix Area</p>
+    <nav class="social" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/raviteja-gadde/">LinkedIn</a>
+      <a href="https://github.com/raviteja-gadde">GitHub</a>
+      <a href="https://x.com/ravi_gadde7">X</a>
+    </nav>
+  </header>
 
-  <p>I build the AI systems behind Gallup's enterprise products. I took Gallup AI from first prototype to production, and co-authored the <a href="https://aws.amazon.com/blogs/architecture/gallup-delivers-real-time-workplace-coaching-to-thousands-of-leaders-with-amazon-bedrock/">AWS Architecture Blog post</a> on how it's built.</p>
+  <section class="about" aria-label="About">
+    <p>I build production AI systems. Took Gallup AI from prototype to production. Recently co-authored the <a href="https://aws.amazon.com/blogs/architecture/gallup-delivers-real-time-workplace-coaching-to-thousands-of-leaders-with-amazon-bedrock/">AWS Architecture Blog post</a> on its initial architecture.</p>
+    <p><a href="about.html" class="more">more about me</a></p>
+  </section>
 
-  <p>Ten years in, across analytics platforms, payments, and financial services, I've worked end to end: design, code, the infrastructure it runs on, and what happens after launch.</p>
+  <main>
+    <section class="articles" aria-label="Articles">
+      <!-- Newest first. Each article entry:
+      <article>
+        <h2><a href="posts/YYYY-MM-DD-slug.html">Title</a></h2>
+        <time datetime="YYYY-MM-DD">Month DD, YYYY</time>
+        <p class="excerpt">Opening 2-3 sentences.</p>
+      </article>
+      -->
+    </section>
+  </main>
 
-  <p>I'm strongest on the layers an AI product stands on: the data, the identity and access around it, the retrieval that feeds it, and the evaluation that says whether it works. Most of my attention right now is on agent systems, giving models tools, boundaries, and enough evaluation to trust them with real decisions.</p>
-
-  <dl>
-    <dt><a href="https://www.linkedin.com/in/raviteja-gadde/">LinkedIn</a></dt><dd>full history</dd>
-    <dt><a href="https://github.com/raviteja-gadde">GitHub</a></dt><dd>code</dd>
-    <dt><a href="https://x.com/ravi_gadde7">X</a></dt><dd>occasional notes</dd>
-  </dl>
-
-  <footer>Greater Phoenix Area</footer>
-</main>
+  <footer class="site-footer">Ravi Teja Gadde</footer>
+</div>
 </body>
 </html>

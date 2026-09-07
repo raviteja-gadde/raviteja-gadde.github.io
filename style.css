@@ -1,0 +1,200 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fff;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --line: #ddd;
+  --accent: #1a6fb5;
+  --surface: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --fg: #e0e0e0;
+    --muted: #999;
+    --line: #333;
+    --accent: #7cb8e4;
+    --surface: #1a1a1a;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.7 Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Header ---- */
+
+.site-header { margin-bottom: .4rem; }
+.site-header h1 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 0;
+}
+.site-header h1 a { color: var(--fg); }
+.site-header .tagline {
+  margin: .1rem 0 0;
+  color: var(--muted);
+  font-size: .85rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.social {
+  display: inline;
+  font-size: .85rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.social a { color: var(--muted); }
+.social a:hover { color: var(--accent); }
+.social a + a::before {
+  content: "\b7";
+  margin: 0 .4rem;
+  color: var(--muted);
+}
+
+/* ---- About (compact, index only) ---- */
+
+.about {
+  margin: 1.2rem 0 1.5rem;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+.about p { margin: 0; }
+.about .more {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: .85rem;
+}
+
+/* ---- About page (full) ---- */
+
+.about-full p {
+  margin: 0 0 .8rem;
+}
+.about-full p:last-child { margin-bottom: 0; }
+
+/* ---- Article list (index) ---- */
+
+.articles article { padding: 1.2rem 0; }
+.articles article:first-child {
+  border-top: 1px solid var(--line);
+  padding-top: 1.4rem;
+}
+.articles article + article { border-top: 1px solid var(--line); }
+.articles h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 .15rem;
+  line-height: 1.3;
+}
+.articles h2 a { color: var(--fg); }
+.articles h2 a:hover { color: var(--accent); text-decoration: none; }
+.articles time {
+  display: block;
+  font-size: .78rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--muted);
+  margin-bottom: .3rem;
+}
+.articles .excerpt {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+/* ---- Article page ---- */
+
+.back-link {
+  display: inline-block;
+  font-size: .85rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+.article-header { margin-bottom: 1.8rem; }
+.article-header h1 {
+  font-size: 1.5rem;
+  margin: 0 0 .3rem;
+  line-height: 1.25;
+}
+.article-header time {
+  font-size: .82rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--muted);
+}
+.article-body p { margin: 0 0 1.1rem; }
+.article-body h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 .6rem;
+}
+.article-body h3 {
+  font-size: 1rem;
+  margin: 1.5rem 0 .5rem;
+}
+.article-body ul, .article-body ol {
+  padding-left: 1.5rem;
+  margin: 0 0 1.1rem;
+}
+.article-body li { margin-bottom: .3rem; }
+.article-body code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  background: var(--surface);
+  padding: .1em .3em;
+  border-radius: 3px;
+  font-size: .85em;
+}
+.article-body pre {
+  background: var(--surface);
+  padding: 1rem 1.2rem;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-size: .8rem;
+  line-height: 1.55;
+  margin: 0 0 1.1rem;
+}
+.article-body pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+.article-body blockquote {
+  margin: 0 0 1.1rem;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+}
+
+/* ---- Footer ---- */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .82rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--accent); }
+
+/* ---- Responsive ---- */
+
+@media (max-width: 420px) {
+  .page { padding: 2rem 1rem 3rem; }
+  .site-header h1 { font-size: 1.25rem; }
+  .articles h2 { font-size: 1.05rem; }
+  .article-header h1 { font-size: 1.3rem; }
+}
